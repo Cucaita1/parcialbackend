@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservas Coworking</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Ingrese sus datos</h1>
+        <form>
+            
+            <p><label>nombre</label><input type="text" name="nombre" required></p>
+            <p><label>fecha</label><input type="date" name="fecha" required></p>
+            <p><label>espacio de trabajo</label>
+                <select name="espacio" required>
+                    <option value="escritorio">Escritorio</option>
+                    <option value="sala_reuniones">Sala de reuniones</option>
+                    <option value="oficina_privada">Oficina privada</option>
+                </select></p>
+            <p><label>duracion de la reserva (en horas)</label>
+                <input type="number" name="duracion" min="1" required></p>
+             
+            <button type="submit">Reservar</button>
+        </form>
+        <br>
+        <a href="reservas.jsp">
+            <button>Ver reservas</button>
+        </a>
+        
+    </body>
+</html>
